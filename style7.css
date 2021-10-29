@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.div3D {
+  width: 100%;
+  height: 50%;
+  background-color: salmon;
+}
+
+.hide {
+  /*for genral settings*/
+  display: none;
+}
+.hide excelDiv {
+  size: 50%;
+}
+
+.iconsDiv:hover + .hide {
+  /*for genral settings*/
+  display: block;
+  z-index: 3;
+}
+.iconsDiv path:hover {
+  /*for genral settings*/
+  fill: tomato;
+  background-color: tomato;
+}
+
+.hide {
+  /*for genral settings*/
+  display: none;
+}
+
+.tabsDiv:hover + .hide {
+  /*for genral settings*/
+  display: inline-block;
+}
+
+#managementTools {
+  margin-top: -10%;
+}
+
+#controllerFrameSVG {
+  margin-left: 30%;
+  padding: 0%;
+}
+#controllerFrameSVG path {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 3;
+
+  animation: animStrokeArray 12s infinite 2s normal forwards;
+}
+@keyframes opacity1To0to1 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity0To1To0 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityTo1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityTo0 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animStrokeArray {
+  0% {
+    stroke-dasharray: 24;
+    stroke-dashoffset: 2;
+    stroke-width: 46px;
+  }
+  30% {
+    stroke-dasharray: 6;
+    stroke-dashoffset: 2;
+    stroke-width: 0px;
+  }
+
+  100% {
+    stroke-dasharray: 6;
+    stroke-dashoffset: 3;
+    stroke-width: 12px;
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-array: 2;
+  }
+}
