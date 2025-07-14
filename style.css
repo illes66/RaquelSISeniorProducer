@@ -224,4 +224,21 @@
     padding-top: 4rem;
   }
 }
+/* Haz que el label ocupe toda la línea y baje más */
+#toggle-label {
+  display: block;
+  margin-top: 3rem;   /* aquí subes o bajas el bloque entero */
+  font-size: 1.25rem; /* opcional, para que destaque */
+}
+
+/* Espacio extra entre el label y el h1 */
+.title-switcher-wrapper {
+  margin-top: 1rem;   /* separa el título del label */
+}
+
+/* Resetea márgenes internos del h1 */
+.title-switcher-wrapper .title {
+  margin: 0;
+  line-height: 1.2;    /* para controlar bien la altura de línea */
+}
 
