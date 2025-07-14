@@ -210,3 +210,12 @@
   background-color: tomato;  /* fondo rojo-tomate */
   color: white;              /* texto blanco para contraste */
 }
+/* Evita que se “partan” las fechas o los textos largos */
+.timeline-section-title {
+  white-space: nowrap;
+}
+
+/* Centra siempre el contenido de los headings */
+.timeline-section {
+  text-align: center;
+}
