@@ -208,11 +208,16 @@
 
 /* Aplica margen superior a todo el wrapper de los H1 */
 .title-switcher-wrapper {
-  margin-top: 2rem; /* cámbialo por el valor que necesites */
+  margin-top: 0; /* cámbialo por el valor que necesites */
 }
 
 
-
+#toggle-label,
+.title-switcher-wrapper h1,
+.title-switcher-wrapper .subtitle {  /* ajusta este selector al de tu “open to explore” */
+  display: block;
+  margin-top: 4rem;   /* aquí sube/baja a tu gusto */
+}
 
 .label:hover {
   background-color: tomato;  /* fondo rojo-tomate */
