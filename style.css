@@ -210,8 +210,4 @@
   background-color: tomato;  /* fondo rojo-tomate */
   color: white;              /* texto blanco para contraste */
 }
-.titles-container {
-  border: 2px solid red;
-  padding: 16px;
-  margin: 24px 0;
-}
+
