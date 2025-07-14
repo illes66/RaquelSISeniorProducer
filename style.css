@@ -245,3 +245,20 @@
     <span style="color: tomato;">Open to explore</span>
   </h1>
 </div>
+/* force the label and the switcher to sit on the same line */
+#toggle-label,
+.title-switcher-wrapper {
+  display: inline-flex;
+  align-items: center;    /* vertically center them */
+}
+
+/* push the h1’s over a bit, so they don’t bump into “Title:” */
+.title-switcher-wrapper {
+  margin-left: 1rem;
+}
+
+/* make sure the two titles themselves don’t introduce extra margins */
+.title-switcher-wrapper .title {
+  margin: 0;
+  padding: 0;
+}
