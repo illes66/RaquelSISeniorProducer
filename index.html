@@ -1,556 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume – [Your Name]</title>
+  <!-- W3.CSS for utility classes -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1rem;
+      color: #333;
+    }
+    header, section {
+      max-width: 800px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    h1, h2, h3 {
+      margin: .5rem 0;
+    }
+    h1 b, h3 b { font-weight: 700; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; color: #444; }
+    h3 { font-size: 1.75rem; }
+    p { margin: .75rem 0; }
+    .red-box {
+      border: 2px solid #e63946;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    hr {
+      border: 0;
+      height: 4px;
+      background: #e63946;
+      width: 50px;
+      margin: .5rem auto 1rem;
+      border-radius: 2px;
+    }
+    /* Ajustes de centrado para secciones específicas */
+    .center-section h1,
+    .center-section h3 {
+      text-align: center !important;
+    }
+    .center-section p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
-    <title>Raquel Sanchez Illescas Senior Producer</title>
+  <!-- HEADER -->
+  <header>
+    <h1 class="w3-text-red">[Your Name]</h1>
+    <p>[Your Title] &bull; [Email] &bull; [Phone] &bull; [LinkedIn / Portfolio]</p>
+  </header>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./style.css" />
+  <!-- PRODUCER – STAGE CLEAR STUDIOS -->
+  <section id="stageClear" class="center-section" style="margin-top:75px;">
+    <h1 class="w3-xxxlarge w3-text-red">
+      <b>
+        Producer
+        <span style="font-size:x-large;">
+          Stage Clear Studios (Madrid, Spain) Jan 2017 – Feb 2022
+        </span>
+      </b>
+    </h1>
+    <hr/>
+    <p>
+      In January 2017, I joined Stage Clear Studios as a programmer intern. By May 2017, I had transitioned into a producer role—first overseeing port development and release production, then serving as the publishing lead for port projects—delivering over 50 titles.
+    </p>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <style>
-      body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-      body {font-size:16px;}
-      .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-      .w3-half img:hover{opacity:1}
-    </style>
-  </head>
-
-  <body>
-
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
-         style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-      <a href="javascript:void(0)" onclick="w3_close()"
-         class="w3-button w3-hide-large w3-display-topleft"
-         style="width:100%;font-size:22px">Close Menu</a>
-      <div class="w3-container">
-        <h3 class="w3-padding-64"><b>Raquel<br>Sánchez Illescas</b></h3>
-      </div>
-      <div class="w3-bar-block">
-        <a href="#" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">About me</a>
-        <a href="#2KValencia" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Senior Producer, 2K
-        </a>
-        <a href="#astragon" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Producer, astragon
-        </a>
-        <a href="#stageClear" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Producer, Stage Clear Studios
-        </a>
-        <div style="padding-left: 20px;">
-          <a href="#development" onclick="w3_close()"
-             class="w3-bar-item w3-button w3-hover-white">
-             Game Development Producer
-          </a>
-          <a href="#port" onclick="w3_close()"
-             class="w3-bar-item w3-button w3-hover-white">
-             Port Dev & Release/ Publishing Producer
-          </a>
-          <a href="#programmer" onclick="w3_close()"
-             class="w3-bar-item w3-button w3-hover-white">
-             Interim Programmer
-          </a>
-        </div>
-        <a href="#designers" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Management tools
-        </a>
-        <a href="#packages" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           IT & Design Skills
-        </a>
-        <a href="#experience" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Experience & Studies
-        </a>
-        <a href="#contact" onclick="w3_close()"
-           class="w3-bar-item w3-button w3-hover-white">
-           Contact
-        </a>
-      </div>
-    </nav>
-
-    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right"
-         onclick="w3_open()">☰</a>
-      <span>Raquel Sánchez Illescas</span>
-    </header>
-
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()"
-         style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-      <span id="toggle-label" class="label">Title:</span>
-      <div class="title-switcher-wrapper">
-        <h1 id="main-title" class="title visible">Senior Producer</h1>
-        <h1 id="alt-title" class="title hidden">
-          <span style="color: tomato;">Open to explore</span>
-        </h1>
-      </div>
-
-      <br>
-      <span style="font-weight: bold; text-decoration: underline;">
-        Intro: About me and How I got into video games.
-      </span>
-      <br><br>
-      <ul>
-        <li>I studied History of Art and Marketing (Advertising and Public Relations), specializing in Brand Corporate Identity.</li>
-        <li>My early career was in TV production and communications. In 2008 I transitioned into social media and online communications.</li>
-        <li>Between 2012 and 2013, while exploring web development, I began teaching myself to code; shortly afterward I discovered Python and continued learning programming independently.</li>
-        <li>My passion for coding led me into video games, where I fell in love with narrative, mechanics, and the entire process of game creation.</li>
-        <li>In 2015, I paused my career to pursue a Master’s degree in Game Development at CICE (Madrid), which covered:</li>
-      </ul>
-      <div style="padding: 9px; margin-left: 20px; margin-right: 150px;">
-        <ul>
-          <li>Game development with <span style="font-weight: bold;">Unity engine</span></li>
-          <li>Programming in <span style="font-weight: bold;">C#</span></li>
-          <li>Basic modeling, texturing and animation in <span style="font-weight: bold;">3Ds Max</span></li>
+    <div class="w3-container" style="margin-top:40px;" id="development">
+      <h3 class="w3-xxxlarge w3-text-red">
+        <b>
+          <span style="font-size:x-large;">Game Development Producer</span>
+          <span style="font-size:small;">2019 – 2022</span>
+        </b>
+      </h3>
+      <hr>
+      <p>
+        In 2019, I transitioned into a Game Development Producer role—first serving as Assistant Producer on <em>The Last Kids on Earth</em>, and then taking full ownership of development for the 2.5D platformer <em>Ryan Rescue Squad</em> (based on the Ryan’s World IP), which was published by Outright Games and released on March 4, 2022.
+      </p>
+      <div class="red-box">
+        <ul style="margin:0; padding-left:1em; list-style-type:circle; list-style-position:inside;">
+          <li>Managed end-to-end production for <em>Ryan Rescue Squad</em>, from initial pitch through final release.</li>
+          <li>Coordinated cross-departmental timelines—design, art, UI, SFX, VFX, QA—to meet milestone targets.</li>
+          <li>Oversaw budgeting, vendor selection, and contract management for external development partners.</li>
+          <li>Facilitated weekly sprint reviews and post-mortems to optimize workflows and mitigate risks.</li>
         </ul>
       </div>
-      <li>
-        Shortly after completing my final project, I joined Stage Clear Studios as an Interim Programmer. My programming knowledge was very basic, but following the studio’s partnership with publisher Digerati, I was offered the opportunity to become its first Producer.
-      </li>
+    </div>
+  </section>
 
-      <!-- Game Producer @ 2K Valencia -->
-      <section id="2KValencia" style="margin-top:75px;">
-        <h1 class="w3-xxxlarge w3-text-red">
-          <b>Senior Producer
-            <span style="font-size:x-large;">
-              2K Valencia (Valencia, Spain) Jan 2023 – Apr 2025
-            </span>
-          </b>
-        </h1>
-        <hr style="width:50px; border:5px solid red;" class="w3-round" />
-        <p>
-          <strong>ROLES &amp; OWNERSHIPS:</strong><br>
-          2K Valencia is a studio specialized in high-quality art asset outsourcing for AAA games from 2K IPs. During my time here, I designed and standardized art production processes, strengthened my management skills, and developed a data-driven, automation-focused approach.
-        </p>
-        ● AAA Game &amp; Marketing Art Outsourcing Production
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Milestone planning, tracking and reporting for dedicated art teams across major AAA 2K IPs</li>
-            <li>Communication and reporting to stakeholders — external development studios, internal management, the art team, and 2K Publishing.</li>
-            <li>Asset production planning, documentation, delivery-pipeline management and approval coordination.</li>
-          </ul>
-        </div>
-        ● Gameplay Feature Development Production
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Define milestone plans, track progress, and report on 31st Union and Ethos (2K IP) projects.</li>
-            <li>Manage communication and reporting with stakeholders — 31st Union (external development studio), 2K internal management, production team, and art team.</li>
-            <li>Oversee the asset pipeline, including production planning, documentation, delivery workflows, and approvals.</li>
-            <li>Identify and address potential risks and issues throughout the game development lifecycle.</li>
-          </ul>
-        </div>
-        ● Team Management
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Managed a 23-member multidisciplinary art team across character, environment, and hard-surface disciplines.</li>
-            <li>Conducted performance reviews, OKRs, one-on-ones, and career development planning.</li>
-            <li>Led a data-analysis initiative to better assess and track the team’s technical, artistic, and soft skills.</li>
-          </ul>
-        </div>
-        ● Legal Production
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Define and document the milestone plan and deliverables for 2K and 31st Union’s Ethos IP.</li>
-            <li>Communicate progress and reports to stakeholders: external studio management, internal leadership, and 2K’s publishing legal team.</li>
-            <li>Track and report on asset production plans, pipelines, and approvals.</li>
-          </ul>
-        </div>
-        ● Production &amp; Management Initiatives
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Led production and management initiatives, including a series of workshop sessions to align and share expertise across the art team.</li>
-            <li>Developed and proposed documentation and pipeline improvements—covering onboarding processes, technical workflows, pipeline centralization and rollout of standardized documentation.</li>
-          </ul>
-        </div>
-      </section>
+  <!-- PORT DEV & RELEASE PRODUCER / PUBLISHER PRODUCER -->
+  <section id="port" class="center-section" style="margin:3rem auto;">
+    <h3 class="w3-xxxlarge w3-text-red">
+      <b>
+        <span style="font-size:x-large;">Port Dev &amp; Release Producer / Publisher Producer</span>
+        <span style="font-size:small;">2017 – 2021</span>
+      </b>
+    </h3>
+    <hr>
+    <p>
+      Managed the end-to-end development, publishing, and release cycle for port projects in partnership with Digerati and Big Sugar Games.
+    </p>
+    <!-- Port Development & Release Production -->
+    <div class="red-box">
+      <ul style="margin:0; padding-left:1em; list-style-type:circle; list-style-position:inside;">
+        <li>Managed project review cycles, guiding the programming team’s analysis and QA gameplay/performance reporting.</li>
+        <li>Oversaw pipelines, resource allocation, and milestone planning across port development (programming and QA).</li>
+        <li>Maintained comprehensive documentation—agendas, meeting notes, and stakeholder reports.</li>
+        <li>Coordinated console certification submissions through first-party backends (Sony, Nintendo, Microsoft).</li>
+      </ul>
+    </div>
 
-      <!-- Astragon Entertainment -->
-      <section id="astragon" style="margin-top:75px;">
-        <h1 class="w3-xxxlarge w3-text-red">
-          <b>Producer
-            <span style="font-size:x-large;">
-              astragon Entertainment (Düsseldorf, Germany) Feb 2022 – Dec 2022
-            </span>
-          </b>
-        </h1>
-        <hr style="width:50px; border:5px solid red;" class="w3-round" />
-        <p>
-          <strong>ROLES &amp; OWNERSHIPS:</strong><br>
-          Coordinated and managed the publishing production for <em>Police Simulator: Patrol Officers</em> from Steam beta through console launch—and oversaw the post-launch live-ops plan.
-        </p>
-        ● Development Production
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Coordinated milestone planning across development, QA, and publishing teams, engaging both internal and external stakeholders.</li>
-            <li>Identified and mitigated potential risks and issues throughout the development cycle.</li>
-            <li>Directed QA strategy and execution—covering compliance, functionality, and user-experience testing—and tracked progress against the roadmap.</li>
-          </ul>
-        </div>
-        ● Publishing &amp; Release
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Gestión de submissions de certificación para Sony, Microsoft, Nintendo y Steam.</li>
-            <li>Definición y gestión de roadmap QA para testing de gameplay y certificación.</li>
-            <li>Informes de progreso a stakeholders internos y externos.</li>
-          </ul>
-        </div>
-        ● Communication, Reporting &amp; Financial
-        <div class="red-box">
-          <ul style="margin:0; padding-left:1em; list-style-position:inside; list-style-type:circle;">
-            <li>Coordinated milestone planning with the development team.</li>
-            <li>Identified and mitigated potential risks and issues during development.</li>
-            <li>Communicated progress and reports to both internal and external stakeholders.</li>
-            <li>Established and managed the QA roadmap—covering compliance, functionality, and UX—for gameplay testing and certification.</li>
-            <li>Oversaw console certification submissions across all first-party platforms (Sony, Microsoft, Nintendo) and Steam.</li>
-          </ul>
-        </div>
-        ● Achievements and major skills gained.
-        <div class="red-box">
-          <ul style="margin: 0; padding-left: 1em; list-style-position: inside; list-style-type:circle;">
-            <li>Gained expertise in organizing and standardizing workflows within a robust, consolidated system.</li>
-            <li>Aligned development and publishing strategies with key stakeholders (sales, finance, marketing, media) to uphold high quality standards and achieve KPI targets.</li>
-            <li>Enhanced release management capabilities by owning console certification build submissions for a AA title.</li>
-          </ul>
-        </div>
-      </section>
+    <!-- Publisher Producer -->
+    <div class="red-box">
+      <ul style="margin:0; padding-left:1em; list-style-type:circle; list-style-position:inside;">
+        <li>Led product management for the entire front-end cycle and release on first-party consoles (Sony, Nintendo, Microsoft).</li>
+        <li>Coordinated requests for first-party LSAs, licenses, and age ratings.</li>
+        <li>Managed external timelines for marketing assets and collateral.</li>
+        <li>Communicated and reported to internal and external stakeholders—game developers, publisher management, marketing, social media, etc.</li>
+      </ul>
+    </div>
+  </section>
 
-      <!-- Stage Clear Studios -->
-      <section id="stageClear" style="margin-top:75px;">
-        <h1 class="w3-xxxlarge w3-text-red">
-          <b>Producer
-            <span style="font-size:x-large;">
-              Stage Clear Studios (Madrid, Spain) Jan 2017 – Feb 2022
-            </span>
-          </b>
-        </h1>
-        <hr style="width:50px; border:5px solid red;" class="w3-round" />
-        <p>
-          In January 2017, I joined Stage Clear Studios as a programmer intern. By May 2017, I had transitioned into a producer role—first overseeing port development and release production, then serving as the publishing lead for port projects—delivering over 50 titles.
-        </p>
+  <!-- FOOTER / ADDITIONAL SECTIONS HERE -->
+  <section id="footer" style="margin:3rem 0;">
+    <p class="w3-center">© [Year] [Your Name]. All rights reserved.</p>
+  </section>
 
-        <div class="w3-container" style="margin-top:10px" id="development">
-          <h3 class="w3-xxxlarge w3-text-red">
-            <b>
-              <span style="font-size:x-large;">Game Development Producer</span>
-              <span style="font-size:small;">2019 – 2022</span>
-            </b>
-          </h3>
-          <hr style="width:50px; border:5px solid red;" class="w3-round">
-          <p>
-            In 2019, I transitioned into a Game Development Producer role—first serving as Assistant Producer on The Last Kids on Earth, and then taking full ownership of development for the 2.5D platformer Ryan Rescue Squad (based on the Ryan’s World IP), which was published by Outright Games and released on March 4, 2022.
-          </p>
-          ● Development Production
-          <div class="red-box">
-            <ul style="margin: 0; padding-left: 1em; list-style-position: inside; list-style-type:circle;">
-              <li>Managed end-to-end production for Ryan Rescue Squad, from initial pitch through final release.</li>
-              <li>Coordinated cross-departmental timelines—design, art, UI, SFX, VFX, programming, and QA—to keep milestones aligned with project scope.</li>
-              <li>Proactively identified and mitigated risks and issues throughout development.</li>
-              <li>Implemented and championed Agile methodologies, acting as both Scrum Master and Project Manager.</li>
-            </ul>
-          </div>
-          <br><br>
-          ● Communication, report and planning with external stakeholders
-          <div class="red-box">
-            <ul style="margin: 0; padding-left: 1em; list-style-position: inside;">
-              <li>Communicated progress and status updates to both external and internal stakeholders.</li>
-              <li>Maintained all project documentation—agendas, meeting notes, and post-meeting reports.</li>
-              <li>Proactively identified and mitigated risks and issues throughout development.</li>
-              <li>Implemented and championed Agile methodologies, acting as both Scrum Master and Project Manager.</li>
-            </ul>
-          </div>
-          <br><br>
-          ● Ryan Rescue Squad in numbers:
-          <div class="red-box">
-            <ul style="margin: 0; padding-left: 1em; list-style-position: inside;">
-              <li>TIME OF DEVELOPMENT: 15 months</li>
-              <li>TEAM SIZE: Internal: 30 (design x2, art x3, programming x4, QA x2, UI x1, SFX x1, VFX x1)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="w3-container" style="margin-top:10px" id="port">
-          <h3 class="w3-xxxlarge w3-text-red">
-            <b>
-              <span style="font-size:x-large;">Port Dev & Release Producer / Publisher Producer</span>
-              <span style="font-size:small;">2017 – 2021</span>
-            </b>
-          </h3>
-          <hr style="width:50px; border:5px solid red;" class="w3-round">
-          <p>
-            Managed the end-to-end development, publishing, and release cycle for port projects in partnership with Digerati and Big Sugar Games.
-          </p>
-          ● Port Development & Release Production
-          <div class="red-box">
-            <ul style="margin: 0; padding-left: 1em; list-style-position: inside;">
-              <li>Managed project review cycles, guiding the programming team’s analysis and QA gameplay/performance reporting.</li>
-              <li>Oversaw pipelines, resource allocation, and milestone planning across port development (programming and QA).</li>
-              <li>Maintained comprehensive documentation—agendas, meeting notes, and stakeholder reports.</li>
-              <li>Coordinated console certification submissions through first-party backends (Sony, Nintendo, Microsoft).</li>
-            </ul>
-          </div>
-          <br>
-          ● Publisher
-          <div class="red-box">
-            <ul style="margin: 0; padding-left: 1em; list-style-position: inside;">
-              <li>Led product management for the entire front-end cycle and release on first-party consoles (Sony, Nintendo, Microsoft).</li>
-              <li>Coordinated requests for first-party LSAs, licenses, and age ratings.</li>
-              <li>Managed external timelines for marketing assets and collateral.</li>
-              <li>Communicated and reported to internal and external stakeholders—game developers, publisher management, marketing, social media, etc.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Portfolio Thumbnails -->
-        <div id="portfolio" class="w3-row-padding w3-center">
-          <br><br>
-          <p class="w3-center"><h3>Titles as lead release producer</h3></p><br>
-          <div class="w3-col m3">
-            <img id="groupASS" src="./GroupASS.png" style="width:100%" onclick="onClick(ASSFrame)"
-                 class="w3-hover-opacity" alt="Animal Super Squad">Animal Super Squad XBOX ONE
-            <img id="ASSFrame" src="./GroupASSFull.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Animal Super Squad">
-          </div>
-          <div class="w3-col m3">
-            <img src="./Group1979.png" style="width:100%" onclick="onClick(frame1979)"
-                 class="w3-hover-opacity" alt="1979">1979 Black Friday Revolution PS4, XBOX ONE, SWITCH
-            <img id="frame1979" src="./Frame1979.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="1979 Black Friday Revolution">
-          </div>
-          <div class="w3-col m3">
-            <img src="./GroupSlayawayEdition.png" style="width:100%" onclick="onClick(SlayawayBundles)"
-                 class="w3-hover-opacity" alt="Slayaway">Slayaway Camp: The Butcher´s Cut Special Edition PS4
-            <img id="SlayawayBundles" src="./FrameSlayawayBundles.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Slayaway Camp: The Butcher´s Cut Special Edition">
-          </div>
-          <div class="w3-col m3">
-            <img src="./GroupBleed.png" style="width:100%" onclick="onClick(frameBleed)"
-                 class="w3-hover-opacity" alt="Bleed">Bleed XBOX ONE, SWITCH
-            <img id="frameBleed" src="./FrameBleed.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Bleed">
-          </div>
-        </div>
-        <div class="w3-row-padding w3-center w3-section">
-          <div class="w3-col m3">
-            <img src="./GroupBleed2.png" style="width:100%" onclick="onClick(frameBleed2)"
-                 class="w3-hover-opacity" alt="Bleed 2">Bleed 2 XBOX ONE, SWITCH
-            <img id="frameBleed2" src="./FrameBleed2.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Bleed 2">
-          </div>
-          <div class="w3-col m3">
-            <img src="./GroupBlindfold.png" style="width:100%" onclick="onClick(frameBlindfold)"
-                 class="w3-hover-opacity" alt="Blindfold">Blindfold PS4 VR
-            <img id="frameBlindfold" src="./frameBlindfold.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Blindfold">
-          </div>
-          <div class="w3-col m3">
-            <img src="./GroupSlayaway.png" style="width:100%" onclick="onClick(frameSlayaway)"
-                 class="w3-hover-opacity" alt="Slayaway">Slayaway Camp: The Butcher´s Cut PS4, XBOX ONE, SWITCH
-            <img id="frameSlayaway" src="./FrameSlayaway.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Slayaway Camp: The Butcher´s Cut">
-          </div>
-          <div class="w3-col m3">
-            <img src="./GroupSlain.png" style="width:100%" onclick="onClick(frameSlain)"
-                 class="w3-hover-opacity" alt="Slain">Slain back from hell PS4, XBOX ONE, SWITCH
-            <img id="frameSlain" src="./Frame 10.png" style="width:100%; display: none;"
-                 onclick="onClick(this)" class="w3-hover-opacity" alt="Slain back from hell">
-          </div>
-        </div>
-
-        <!-- Other titles list -->
-        <p><br><br>
-          Other titles released as Lead Release & Port Producer:<br><br>
-          ● Albert and Otto for: XBOX, PS4, Switch<br>
-          ● Glass Masquerade 1 & 2 for: XBOX, PS4, and Switch<br>
-          ● Vertical Drop Heroes for: XBOX, and Switch<br>
-          ● Snakeybus for: XBOX, PS4, and Switch<br>
-          ● Sunless Sea Zubmariner edition for: XBOX<br>
-          ● Reverse Crawl for: XBOX, PS4, and Switch<br>
-          ● Skelly Selest for: XBOX, PS4, and Switch<br>
-          ● Odallus the Dark Calls for: XBOX, PS4, and Switch<br>
-          ● Skelly Selest for: XBOX, PS4, and Switch<br>
-          ● Oniken for: XBOX, PS4, and Switch<br>
-          ● Golem Gates for: XBOX, PS4, and Switch<br>
-          ● Verlet Swing for: XBOX, PS4, and Switch<br>
-          ● Super Blood Hockey for: XBOX, PS4, and Switch<br>
-          ● Omensight for: XBOX<br>
-          ● Stories: The Path of Destinies for: XBOX, PS4, and Switch<br>
-          ● Demons with Shotguns for: XBOX, PS4, and Switch<br>
-          ● Tamashii for: XBOX, PS4, and Switch<br>
-          ● Nefarious for: XBOX, PS4, and Switch<br>
-          ● Straimium Immortaly for: XBOX, PS4, and Switch<br>
-          ● Demon Pit for: XBOX, PS4, and Switch<br>
-          ● Frost for: XBOX, PS4, and Switch<br>
-          ● XenoRaptor for: XBOX, PS4, and Switch<br>
-          ● UnExplored for: XBOX, PS4, and Switch<br>
-          ● Monster Slayers for: XBOX, PS4, and Switch<br>
-          ● Blacksea Odyssey for: XBOX, PS4, and Switch<br>
-          ● Omega Strike for: XBOX, PS4, and Switch<br>
-          ● Spectrum for: XBOX, PS4, and Switch<br>
-          ● Don’t Die Mr. Robor for: XBOX, PS4, and Switch<br>
-          ● The Sun & Moon for: XBOX, PS4, and Switch<br>
-          ● The Aquatic Adventure of the Last Human on Earth for: XBOX, PS4, and Switch<br>
-          ● Shikhondo: Soul Eater for: XBOX, PS4, and Switch<br>
-          ● Pipe Push Paradise for: XBOX, PS4, and Switch<br>
-          ● Ink for: XBOX, PS4, and Switch<br>
-          ● Letter Quest Remastered for: XBOX, PS4, and Switch<br>
-          ● Three Fourths Home for: XBOX, PS4, and Switch<br>
-          ● Paranautical Activity for: XBOX, PS4, and Switch<br>
-          ● Hackey Zack for: XBOX, PS4, and Switch<br>
-          ● Dream Break for: XBOX, PS4, and Switch<br>
-          ● Uncanny Valley for: XBOX, PS4, and Switch<br>
-          ● Kill All Zombies for: XBOX, PS4, and Switch<br>
-          ● Valfaris for: XBOX, PS4, and Switch<br>
-          ● Unto The End for: XBOX, PS4, and Switch<br><br><br>
-        </p>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black"
-             style="padding-top:0" onclick="this.style.display='none'">
-          <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-          <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption"></p>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- Management tools -->
-      <section id="designers" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Management tools.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
-        <p>Hover over the icons to know how I use each tool for Team and project management.</p>
-
-        <!-- SVG controller frame and icons (content as in your document) -->
-        <!-- ... full SVG markup unchanged ... -->
-
-      </section>
-
-      <!-- IT & Design Skills -->
-      <section id="packages" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>IT & Design Skills.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
-        <p>Hover over the icons to see my skills proficiency on other tools I use to work on my personal projects:</p>
-
-        <div class="w3-row-padding">
-          <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Programming</li>
-              <!-- All icon SVGs and hover panels as in your document -->
-            </ul>
-          </div>
-          <div class="w3-half">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-red w3-xlarge w3-padding-32">Design</li>
-              <!-- All icon SVGs and hover panels as in your document -->
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience & Studies -->
-      <section id="experience" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Experience & Studies.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
-        <div class="w3-row-padding">
-          <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Experience</li>
-              <!-- All Experience list items as in your document -->
-            </ul>
-          </div>
-          <div class="w3-half">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-red w3-xlarge w3-padding-32">Academic Studies</li>
-              <!-- All Studies list items as in your document -->
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
-        <p>If you think my profile could be a good asset to your team, don't hesitate to contact me</p>
-        <form action="https://formsubmit.co/raquelsanchezillescas@gmail.com" method="POST">
-          <div class="w3-section">
-            <label>Name</label>
-            <input class="w3-input w3-border" type="text" name="Name" required>
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input class="w3-input w3-border" type="text" name="Email" required>
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input w3-border" type="text" name="Message" required>
-          </div>
-          <button type="submit"
-                  class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">
-            Send Message
-          </button>
-        </form>
-      </section>
-
-    </div> <!-- End page content -->
-
-    <!-- W3.CSS Container -->
-    <div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"></div>
-
-    <!-- Scripts -->
-    <script>
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        document.getElementById("caption").innerHTML = element.alt;
-      }
-      function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 ||
-            document.documentElement.scrollTop > 100) {
-          navbar.className = "w3-bar w3-card w3-animate-top w3-white";
-        } else {
-          navbar.className =
-            navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
-      }
-      window.onscroll = myFunction;
-      function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-      const label = document.getElementById('toggle-label');
-      const mainTitle = document.getElementById('main-title');
-      const altTitle  = document.getElementById('alt-title');
-      label.addEventListener('click', () => {
-        if (mainTitle.classList.contains('visible')) {
-          mainTitle.classList.replace('visible','hidden');
-          altTitle .classList.replace('hidden','visible');
-        } else {
-          altTitle .classList.replace('visible','hidden');
-          mainTitle.classList.replace('hidden','visible');
-        }
-      });
-    </script>
-
-  </body>
+</body>
 </html>
-
-
