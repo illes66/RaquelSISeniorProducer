@@ -228,7 +228,7 @@
 /* Ajusta el 4rem al espacio que necesites */
 #toggle-label {
   display: block;
-  margin-top: 4rem;
+  margin-top: 6rem;
   font-weight: bold;    /* opcional: para que destaque */
   font-size: 1.1rem;     /* opcional */
 }
