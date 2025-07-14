@@ -210,4 +210,11 @@
   background-color: tomato;  /* fondo rojo-tomate */
   color: white;              /* texto blanco para contraste */
 }
-
+/* cajones con borde rojo, centrados y fluidos */
+.red-box {
+  padding: 0.5em;
+  margin: 1em auto;         /* centrado horizontal automático */
+  border: 1px solid red;
+  max-width: 100%;          /* nunca rebase el ancho del contenedor */
+  box-sizing: border-box;
+}
