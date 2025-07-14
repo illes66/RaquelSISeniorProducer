@@ -262,23 +262,26 @@
   margin: 0;
   padding: 0;
 }
-/* 1) Convierte la sección en un flex container en columna */
+/* Ajustes Stage Clear */
 #stageClear {
-  display: flex;
-  flex-direction: column;
-  align-items: center;       /* centra horizontalmente */
-  justify-content: flex-start;
-}
-
-/* 2) Para que tus .red-box no ocupen el 100% y queden centradas */
-#stageClear .red-box {
-  width: auto;               /* que sea sólo lo que necesite */
-  max-width: 600px;          /* opcional: límite de anchura */
-  margin: 1em 0;             /* separación vertical */
-}
-
-/* 3) Si quieres centrar también el título */
-#stageClear > h1 {
   text-align: center;
-  width: 100%;
 }
+
+#stageClear .red-box {
+  display: inline-block !important; /* sólo el ancho necesario */
+  float: none !important;           /* anula floats previos */
+  margin: 0.5em auto;               /* centrado horizontal */
+  text-align: left;                 /* contenido interno alineado a la izquierda */
+  vertical-align: top;
+}
+
+#stageClear .red-box ul {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+#stageClear > h1,
+#stageClear > p {
+  text-align: center; /* refuerza centrado de título y párrafo */
+}
+
