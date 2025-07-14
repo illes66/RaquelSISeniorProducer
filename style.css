@@ -218,3 +218,10 @@
   max-width: 100%;          /* nunca rebase el ancho del contenedor */
   box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 4rem;
+  }
+}
+
