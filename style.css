@@ -262,14 +262,23 @@
   margin: 0;
   padding: 0;
 }
-/* Centrar todo el contenido de la sección “stageClear” */
+/* 1) Convierte la sección en un flex container en columna */
 #stageClear {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centra horizontalmente */
+  justify-content: flex-start;
 }
 
-/* Si tus .red-box son demasiado anchas, que se ajusten al contenido y queden en el centro */
+/* 2) Para que tus .red-box no ocupen el 100% y queden centradas */
 #stageClear .red-box {
-  display: inline-block;
-  margin: 0 auto;
-  text-align: left; /* para que las listas dentro sigan alineadas a la izquierda */
+  width: auto;               /* que sea sólo lo que necesite */
+  max-width: 600px;          /* opcional: límite de anchura */
+  margin: 1em 0;             /* separación vertical */
+}
+
+/* 3) Si quieres centrar también el título */
+#stageClear > h1 {
+  text-align: center;
+  width: 100%;
 }
