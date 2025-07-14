@@ -224,24 +224,11 @@
     padding-top: 4rem;
   }
 }
-/* Hacemos que el label baje */
-/* Ajusta el 4rem al espacio que necesites */
-#toggle-label {
-  display: block;
-  margin-top: 6rem;
-  font-weight: bold;    /* opcional: para que destaque */
-  font-size: 1.1rem;     /* opcional */
-}
-
-/* Separación extra entre el label y el <h1> */
-.title-switcher-wrapper {
-  margin-top: 1rem;
-}
-
-/* Eliminamos márgenes por defecto de los h1 */
-.title-switcher-wrapper .title {
-  margin: 0;
-  line-height: 1.2;
-}
-
-
+<!-- HTML tal y como lo tenías antes -->
+<span id="toggle-label" class="label">Title:</span>
+<div class="title-switcher-wrapper">
+  <h1 id="main-title" class="title visible">Senior Producer</h1>
+  <h1 id="alt-title" class="title hidden">
+    <span style="color: tomato;">Open to explore</span>
+  </h1>
+</div>
