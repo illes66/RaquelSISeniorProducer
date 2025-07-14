@@ -206,6 +206,14 @@
 .title-switcher-wrapper .hidden { display: none; }
 .title-switcher-wrapper .visible { display: block; }
 
+/* Aplica margen superior a todo el wrapper de los H1 */
+.title-switcher-wrapper {
+  margin-top: 2rem; /* cámbialo por el valor que necesites */
+}
+
+
+
+
 .label:hover {
   background-color: tomato;  /* fondo rojo-tomate */
   color: white;              /* texto blanco para contraste */
