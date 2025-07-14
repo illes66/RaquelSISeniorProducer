@@ -262,3 +262,14 @@
   margin: 0;
   padding: 0;
 }
+/* Centrar todo el contenido de la sección “stageClear” */
+#stageClear {
+  text-align: center;
+}
+
+/* Si tus .red-box son demasiado anchas, que se ajusten al contenido y queden en el centro */
+#stageClear .red-box {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left; /* para que las listas dentro sigan alineadas a la izquierda */
+}
