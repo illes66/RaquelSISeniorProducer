@@ -58,7 +58,6 @@ body {font-size:16px;}
   <span>Raquel Sánchez Illescas</span>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
@@ -86,7 +85,6 @@ body {font-size:16px;}
 <!-- el label fuera del recuadro 
 <span id="toggle-label" class="label">Title:</span>-->
 
-<!-- aquí van solo los h1, con borde -->
 <span id="toggle-label" class="label">Title:</span>
 <div class="title-switcher-wrapper">
   <h1 id="main-title" class="title visible">Senior Producer</h1>
@@ -94,6 +92,7 @@ body {font-size:16px;}
     <span style="color: tomato;">Open to explore</span>
   </h1>
 </div>
+
 
 
 <br>
@@ -1192,6 +1191,23 @@ programs aired at 40 Principales and Teletrébol every day.
 </script>
 
 
+<!-- al final de tu <body>, justo antes de </body> -->
+<script>
+  const label = document.getElementById('toggle-label');
+  const mainTitle = document.getElementById('main-title');
+  const altTitle  = document.getElementById('alt-title');
+
+  label.addEventListener('click', () => {
+    // si el main está visible, lo escondemos y mostramos el alt; si no, al contrario
+    if ( mainTitle.classList.contains('visible') ) {
+      mainTitle.classList.replace('visible','hidden');
+      altTitle .classList.replace('hidden','visible');
+    } else {
+      altTitle .classList.replace('visible','hidden');
+      mainTitle.classList.replace('hidden','visible');
+    }
+  });
+</script>
 
 
 </body>
