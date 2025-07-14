@@ -30,7 +30,7 @@
 .iconsDiv path:hover {
   /*for genral settings*/
   fill: tomato;
-  background-color: tomato;
+  background-color: #ff6347;
 }
 
 .hide {
@@ -134,4 +134,79 @@
   to {
     stroke-array: 2;
   }
+}
+
+/* === Title switcher animation 
+.title-switcher {
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.title {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-20px);
+  z-index: 1;
+}
+
+.slide-button {
+  margin-top: 80px;
+  cursor: pointer;
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.slide-button.active {
+  transform: translateX(100px);
+}
+
+=== */
+/* el label que dispara el toggle */
+/* El borde ahora va sobre el label “Title:” */
+.label {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border: 3px solid tomato;
+  margin: 0 5px  80px;   /* ajusta izquierda/derecha como necesites */
+  font-size: 4rem;          /* punto base para que todo herede este tamaño */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Wrapper ahora sin borde */
+.title-switcher-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Ambos títulos heredan el mismo tamaño */
+.title-switcher-wrapper .title {
+  margin: 0 0.5rem 0 0;
+  font-size: xx-large;      /* hereda 4rem */
+  font-weight: lighter;
+}
+
+/* Mostrar/ocultar */
+.title-switcher-wrapper .hidden { display: none; }
+.title-switcher-wrapper .visible { display: block; }
+
+.label:hover {
+  background-color: tomato;  /* fondo rojo-tomate */
+  color: white;              /* texto blanco para contraste */
 }
