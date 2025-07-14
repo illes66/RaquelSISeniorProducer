@@ -30,7 +30,7 @@ body {font-size:16px;}
     <a href="#astragon" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producer, astragon</a> 
     <a href="#stageClear" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Producer, Stage Clear Studios</a> 
    
-    <div style="padding-left: 20px; font-weight: lighter;"> <a href="#development" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Development Producer</a> 
+    <div style="padding-left: 20px; font-weight: ;"> <a href="#development" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Game Development Producer</a> 
 
     <a href="#port" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Port Dev & Release/ Publishing Producer</a> 
     
@@ -58,12 +58,38 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-<h1 class="w3-jumbo">
-  <b>        <div  style="padding: 9px; border: 1px solid red; margin-left: 20px;  margin-right: 150px;">
+  <!-- Header
+   <div class="title-switcher">
+ 
+  <h1 id="main-title" class="title visible">Senior Producer</h1>
+  <h1 id="alt-title" class="title hidden"><span style="color: tomato;">Open to explore</span></h1>
 
-    Title: <span style="text-decoration: line-through;">Senior Producer</span></b> Open to explore 
-</h1>
+  <img src="SlideBoton.svg" alt="Title" id="slide-button" class="slide-button">
+</div>
+
+
+<h1 class="w3-jumbo">
+  <b>        <div  style="padding: 9px;  margin-left: 20px;  margin-right: 150px;">
+
+
+
+    
+
+    Title: <span style="text-decoration: line-through;">Senior Producer</span></b> <span style="color: tomato;">Open to explore </span>
+</h1> -->
+<!-- el label fuera del recuadro 
+<span id="toggle-label" class="label">Title:</span>-->
+
+<!-- aquí van solo los h1, con borde -->
+<span id="toggle-label" class="label">Title:</span>
+<div class="title-switcher-wrapper">
+  <h1 id="main-title" class="title visible">Senior Producer</h1>
+  <h1 id="alt-title"  class="title hidden">
+    <span style="color: tomato;">Open to explore</span>
+  </h1>
+</div>
+
+
 <br>
 <span style="font-weight: bold; text-decoration: underline;">Intro: About me and How I got into video games. </span>
         <br> <br>
@@ -81,8 +107,7 @@ body {font-size:16px;}
           <div  style="padding: 9px; margin-left: 20px;  margin-right: 150px;">●  Game development with <span style="font-weight: bold;">Unity engine</span><br>●  Programming in  <span style="font-weight: bold;">C# </span><br>●  Basic model, texturng and animation in <span style="font-weight: bold;">3Ds Max</span> 
  <br></span></div>
         ● Short after I finished the final project, I enter Stage Clear Studios as interim programmer. My programming knowledgewas very basic, but I had the chance to become the first producer for the studios, after a partnership, the studio did with publisher Digerati. 
-       <br> <br>Scroll to Port if you want to see a cronologic view of my experience in video games. 
-
+    
     <!-- Game Producer -->
     <div class="w3-container" id="2KValencia" style="margin-top:55px">
       
@@ -1032,9 +1057,25 @@ programs aired at 40 Principales and Teletrébol every day.
       }
   }
   </script>
+<script>
+  const label = document.getElementById('toggle-label');
+  const main  = document.getElementById('main-title');
+  const alt   = document.getElementById('alt-title');
+
+  function toggleTitles() {
+    const showingMain = main.classList.contains('visible');
+    main.classList.toggle('visible', !showingMain);
+    main.classList.toggle('hidden',  showingMain);
+    alt.classList.toggle('visible',  showingMain);
+    alt.classList.toggle('hidden',   !showingMain);
+  }
+
+  label.addEventListener('click', toggleTitles);
+</script>
+
+
+
 
 </body>
 
 </html>
-
-
