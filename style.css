@@ -220,21 +220,3 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .w3-main {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 1rem;
-  }
-
-  #controllerFrameSVG {
-    margin-left: 0 !important;
-    width: 100%;
-  }
-
-  .w3-sidebar {
-    width: 100% !important;
-    position: relative !important;
-  }
-}
-
